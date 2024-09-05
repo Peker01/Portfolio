@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/Contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Contact - Ömer Peker</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="header-links">Home</a></li>
+          <li><a href="./About.html" class="header-links">About</a></li>
+          <li><h1 id="name">Ömer Peker</h1></li>
+          <li><a href="./Projects.html" class="header-links">Projects</a></li>
+          <li>
+            <a href="./Contact.html" class="header-links active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact-container">
+        <h1>Contact Me</h1>
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="../JAVASCRIPT/script.js"></script>
+  </body>
+</html>

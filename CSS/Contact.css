@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #0a0f0a;
+  color: #0fff50;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#name {
+  font-family: "Jersey 15", sans-serif;
+  font-size: 180%;
+  color: #0fff50;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+.header-links {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.header-links:hover {
+  background-color: #0fff50;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0fff50;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+header nav ul li a.header-links.active,
+header nav ul li a:focus,
+header nav ul li a:active {
+  background-color: #0fff50;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #0fff50;
+  border-radius: 16px;
+}
+
+nav {
+  border: 2px solid rgb(139, 139, 139);
+  background-color: #3f3b3b;
+  border-radius: 25px;
+  height: 7vh;
+  width: 50%;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+#contact-container {
+  background-color: #3f3b3b;
+  border: 2px solid #0fff50;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  max-width: 800px;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#contact-container:hover {
+  background-color: #2e2e2e;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+#contact-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0fff50;
+}
+
+#contact-container label {
+  display: block;
+  margin: 10px 0;
+  color: #0fff50;
+  font-size: 18px;
+}
+
+#contact-container input,
+#contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #0fff50;
+  background-color: #333;
+  color: #0fff50;
+}
+
+#contact-container button {
+  background-color: #0fff50;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#contact-container button:hover {
+  background-color: black;
+  color: #0fff50;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #0fff50;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Pixelify Sans", sans-serif;
+}
